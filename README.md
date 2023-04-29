@@ -1,11 +1,11 @@
-About pdfsyntax
-===============
+About pdfsyntax-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfsyntax-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/desgeeko/pdfsyntax
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pdfsyntax-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python PDF parsing library and tool built on top to browse the internal structure of a PDF file
 
