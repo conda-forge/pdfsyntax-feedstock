@@ -1,5 +1,5 @@
 {% set name = "pdfsyntax" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdfsyntax-{{ version }}.tar.gz
-  sha256: 05333b62dd0818381e919799588bc17bfcc1f43a924e1d69aa17ac5241d1ed23
+  sha256: 60727a969e2251762176cba541a32dce8ec6b8dfa898e101a6fb1a9686bacc48
 
 build:
   noarch: python
@@ -23,12 +23,16 @@ requirements:
     - python >=3.8
 
 test:
+  source_files:
+    - tests
   imports:
     - pdfsyntax
   commands:
     - pip check
+    - pytest -vvv --capture=tee-sys -k "not test_all_continuous and not test_all_single and not test_length_continuous and not test_length_single and not test_dict and not test_list and not test_page and not test_page2 and not test_str and not test_index_length and not test_page_list and not test_prev and not test_index_length" tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/desgeeko/pdfsyntax
