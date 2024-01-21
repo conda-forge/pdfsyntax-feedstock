@@ -1,5 +1,5 @@
 {% set name = "pdfsyntax" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdfsyntax-{{ version }}.tar.gz
-  sha256: 96faa2a65c68e38753b36542d030f87b6f7854b51ecdd1d2de1494b9532444f5
+  sha256: 910f6a19617d110792d0fd64ab16ed135363e4002cc00d24c2aeba3ca3e67296
 
 build:
   noarch: python
