@@ -23,17 +23,12 @@ requirements:
     - python >=3.8
 
 test:
-  source_files:
-    - tests
   imports:
     - pdfsyntax
   commands:
     - pip check
-    - pytest -vvv --capture=tee-sys -k "not test_all_continuous and not test_all_single and not test_length_continuous and not test_length_single and not test_dict and not test_list and not test_page and not test_page2 and not test_str and not test_index_length and not test_page_list and not test_prev and not test_index_length"
-      tests
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/desgeeko/pdfsyntax
