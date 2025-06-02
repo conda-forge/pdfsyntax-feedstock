@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pdfsyntax
-  version: 0.1.5
+  version: "0.1.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pdfsyntax-${{ version }}.tar.gz
-  sha256: 4d4c8654e909a4931e8033e8e03fbd831f97548dea021a000f80b611ef1f75ea
+  sha256: b4d8823a83e77c4617bbcc96caabd1157e1ab8ae73c4af085c4397fb9a29f320
 
 build:
   number: 0
